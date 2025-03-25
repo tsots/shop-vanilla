@@ -132,6 +132,7 @@ function addToCart(product, color, size) {
     });
   }
   sessionStorage.setItem("cart", JSON.stringify(cart));
+  updateCartBadge();
 }
 
 function displayCart() {
@@ -193,6 +194,7 @@ function removeCartItem() {
       cart.splice(index, 1);
       sessionStorage.setItem("cart", JSON.stringify(cart));
       displayCart();
+      updateCartBadge();
     });
   });
 }
@@ -205,6 +207,7 @@ function updateCartQuantity() {
       cart[index].quantity = parseInt(this.value);
       sessionStorage.setItem("cart", JSON.stringify(cart));
       displayCart();
+      updateCartBadge();
     });
   });
 }
