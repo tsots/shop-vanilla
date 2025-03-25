@@ -11,6 +11,33 @@
     />
   </head>
   <body>
+    <nav>
+      <a href="index.html" class="logo">Ecommerce.</a>
+      <a href="cart.html" class="cart-icon">
+        <i class="ri-shopping-bag-line"></i>
+        <span class="cart-item-count"></span>
+      </a>
+    </nav>
+
+    <div class="cart">
+      <div class="cart-header">
+        <span>Products</span>
+        <span>Price</span>
+        <span>Quantity</span>
+        <span>Total</span>
+        <span>Remove</span>
+      </div>
+
+      <div class="cart-items"></div>
+
+      <div class="cart-total">
+        <h3>Cart Total</h3>
+        <p>SubTotal <span class="subtotal">$0</span></p>
+        <p>Delivery Fee <span>Free</span></p>
+        <p>Grand Total <span class="grand-total">$0</span></p>
+        <button class="btn">Proceed</button>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
